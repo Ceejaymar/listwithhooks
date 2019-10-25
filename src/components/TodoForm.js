@@ -22,7 +22,6 @@ const TodoForm = ({ addTodo }) => {
           fullWidth
         />
       </form>
-      {/* <Button onClick={reset}>Reset</Button> */}
     </Paper>
   );
 };

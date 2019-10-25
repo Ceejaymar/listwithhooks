@@ -8,7 +8,7 @@ export default initialValue => {
 
   const reset = () => {
     setValue('');
-  }
+  };
 
   return [value, handleChange, reset];
 };
