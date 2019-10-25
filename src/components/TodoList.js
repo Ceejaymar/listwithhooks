@@ -10,8 +10,8 @@ const TodoList = ({ todos, removeTodo, toggleTodo, editTodo }) => {
     <Paper>
       <List>
         {
-          todos.map((todo, key) => (
-            <div key={key}>
+          todos.map((todo, i) => (
+            <div key={i}>
               <Todo
                 task={todo.task}
                 id={todo.id}
@@ -20,7 +20,7 @@ const TodoList = ({ todos, removeTodo, toggleTodo, editTodo }) => {
                 toggleTodo={toggleTodo}
                 editTodo={editTodo}
               />
-              <Divider />
+              { (i !== todos.length - 1) && <Divider /> }
             </div>
           ))
         }
