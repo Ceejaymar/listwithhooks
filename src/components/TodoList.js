@@ -14,9 +14,7 @@ const TodoList = ({ todos, removeTodo, toggleTodo, editTodo }) => {
             todos.map((todo, i) => (
               <div key={i}>
                 <Todo
-                  task={todo.task}
-                  id={todo.id}
-                  completed={todo.completed}
+                  {...todo}
                   removeTodo={removeTodo}
                   toggleTodo={toggleTodo}
                   editTodo={editTodo}
